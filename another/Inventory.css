@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+   margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    margin: 22px auto;
+    left: 22%;
+    display: block;
+    max-height: calc(100vh - 10%); /* Adjust this based on the remaining height */
+    overflow-x: auto;
+    width: 100%;
+    
+}
+
+
+
+.cups-left h4 {
+    margin-bottom: 30px;
+    color: #291603;
+}
+
+.cup-size {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cup-size label {
+    font-size: 14px;
+}
+
+
+.scrollable-table {
+    max-height: 400px; /* Set the maximum height for the scroll */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 20px; /* Add space below the table */
+}
+
+.cups-left {
+    width: 20%;
+    border: 2px solid #291603;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 20%);
+    text-align: center;
+    margin-top: -210px;
+}
+
+.cup-size {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cup-size label {
+    font-size: 14px;
+}
+
+
+.add-button {
+    background-color: #291603;
+    color: white;
+    border: none;
+    padding: 10px 49px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.add-button:hover {
+    background-color: #8C6741;
+}
+
+
+
+.cups-left button {
+    background-color: #291603; /* Vibrant orange for the button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.item-details {
+    border: 2px solid #291603;
+    border-radius: 10px;
+    padding: 15px;
+    width: 20%; /* Smaller width for the item details */
+    background-color: #ffffff;
+    margin:15%;
+    margin-left:0%;
+    margin-top: 22px; /* Adjust based on the padding/margin */
+}
+
+.item-details h2 {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #291603;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+button:hover {
+    background-color: #312f2e;
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 80px; /* Smaller image */
+    height: 80px;
+    border-radius: 5px;
+}
+
+.item-list {
+    border: 2px solid #291603;
+    border-radius: 10px;
+    padding: 15px;
+    width: 52%; /* Larger width for the item list */
+    background-color: #fff;
+    margin-top: -726px; /* Adjust based on the padding/margin */
+    height: calc(92vh - 200px); /* Full height minus margin */
+    margin-left: 22%;
+}
+
+.item-list h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+}
+
+th {
+    background-color: #241001;
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Ensure the header stays on top */
+    color: #ffff;
+}
+
+tbody {
+    display: block;
+    max-height: calc(71vh - 200px); /* Adjust this based on the remaining height */
+    overflow-y: auto;
+    width: 100%;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.item-row {
+    cursor: pointer;
+}
+
+.item-row:hover {
+    background-color: #f9f9f9;
+}
+
+
+
+/* Custom styling for the select dropdown */
+.custom-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><polygon points="0,0 20,0 10,20" fill="%23291603"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    appearance: none; /* Remove default dropdown arrow */
+}
+
+/* Hover effect */
+.custom-select:hover {
+    border-color: #291603;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect */
+.custom-select:focus {
+    outline: none;
+    border-color: #291603;
+    box-shadow: 0 0 5px rgba(41, 22, 3, 0.5);
+}
+
+
+/* Style for the container around the select dropdown */
+.size-selection {
+    margin-bottom: 15px; /* Spacing below the selection */
+}
+
+.size-selection label {
+    display: block; /* Ensure the label takes a new line */
+    margin-bottom: 5px; /* Space between label and dropdown */
+    font-weight: bold; /* Bold font for better visibility */
+    color: #291603; /* Match the color theme */
+}
+
+/* Custom styling for the select dropdown */
+select#size {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><polygon points="0,0 20,0 10,20" fill="%23291603"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    appearance: none; /* Remove default dropdown arrow */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions for interactions */
+}
+
+/* Hover effect */
+select#size:hover {
+    border-color: #291603;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect */
+select#size:focus {
+    outline: none;
+    border-color: #291603;
+    box-shadow: 0 0 5px rgba(41, 22, 3, 0.5);
+}
+
+/* Styling for option elements */
+select#size option {
+    padding: 10px; /* Add padding to options */
+    background-color: #ffffff; /* Background color for options */
+    color: #291603; /* Font color for options */
+}
+
+
+
+.btn-unavailable {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-available {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.available {
+    background-color: #241001; /* Green for available */
+    color: white;
+    padding: 1% 10px;
+    border-radius: 51px;
+}
+
+.unavailable {
+    background-color: #312f2e; /* Red for unavailable */
+    color: white;
+    padding: 1% 10px;
+    border-radius: 125px;
+}      
+    
+.item-list2 {
+    border: 2px solid #291603;
+    border-radius: 10px;
+    padding: 15px;
+    width: 52%; /* Larger width for the item list */
+    background-color: #fff;
+    margin-top: -30%; /* Adjust based on the padding/margin */
+    height: calc(60vh - 10px); /* Full height minus margin */
+    margin-left: 22%;
+    
+}
+

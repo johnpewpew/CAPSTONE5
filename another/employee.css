@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    left: 20%;
+}
+
+/* Employee form container */
+.item-details {
+    border: 2px solid #291603;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    max-width: 350px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-details h2 {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+/* Form fields */
+input[type="text"], input[type="email"], input[type="password"], select, input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #291603;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+button:hover {
+    background-color: #312f2e;
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.item-list {
+    border: 2px solid #291603;
+    border-radius: 10px;
+    padding: 15px;
+    width: 52%;
+    background-color: #fff;
+    position: fixed;
+    top: 40px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    left: 47%;
+}
+
+.item-list h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+th {
+    background-color: #241001;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    color: #fff;
+}
+
+tbody {
+    display: block;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    width: 100%;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.item-row {
+    cursor: pointer;
+}
+
+.item-row:hover {
+    background-color: #f9f9f9;
+}
+
+/* Button Styles */
+.btn-unavailable {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-available {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.available {
+    background-color: #241001;
+    color: white;
+    padding: 1% 10px;
+    border-radius: 51px;
+}
+
+.unavailable {
+    background-color: #312f2e;
+    color: white;
+    padding: 1% 10px;
+    border-radius: 125px;
+}

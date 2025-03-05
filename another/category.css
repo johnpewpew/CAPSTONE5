@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    overflow: hidden; /* Prevent scrolling of the body */
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    left: 20%;
+}
+
+.category-details {
+    border: 2px solid #291603;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    background-color: #fff;
+    position: fixed; /* Keep category details fixed */
+    top: 20px; /* Adjust based on layout */
+    left: 23%; /* Keep it in the same position */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+.category-details h2 {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #291603;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+button:hover {
+    background-color: #312f2e;
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.category-list {
+    border: 2px solid #291603;
+    border-radius: 10px;
+    padding: 15px;
+    width: 52%; /* Wider category list */
+    background-color: #fff;
+    position: absolute; /* Allow for positioning adjustments */
+    top: 2px; /* Align with category details */
+    left: 42%; /* Position to the right */
+    height: calc(90vh - 40px); /* Full height minus margins */
+    overflow-y: auto; /* Add scroll if content exceeds height */
+}
+
+.category-list h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #241001;
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Ensure the header stays on top */
+    color: #ffff;
+}
+
+tbody {
+    display: block;
+    max-height: calc(1020vh - 200px); /* Adjust this based on remaining height */
+    overflow-y: auto;
+    width: 100%;
+}
+
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
